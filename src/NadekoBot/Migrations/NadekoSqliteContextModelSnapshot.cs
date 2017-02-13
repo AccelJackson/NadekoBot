@@ -434,6 +434,8 @@ namespace NadekoBot.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<ulong>("AutoAssignRoleId");
+                    
+                    b.Property<ulong>("AutoAssignRankId");
 
                     b.Property<bool>("AutoDeleteByeMessages");
 
@@ -444,6 +446,8 @@ namespace NadekoBot.Migrations
                     b.Property<int>("AutoDeleteGreetMessagesTimer");
 
                     b.Property<bool>("AutoDeleteSelfAssignedRoleMessages");
+                    
+                    b.Property<bool>("AutoDeleteSelfAssignedRankMessages");
 
                     b.Property<ulong>("ByeMessageChannelId");
 
@@ -460,6 +464,8 @@ namespace NadekoBot.Migrations
                     b.Property<string>("DmGreetMessageText");
 
                     b.Property<bool>("ExclusiveSelfAssignedRoles");
+                    
+                    b.Property<bool>("ExclusiveSelfAssignedRanks");
 
                     b.Property<bool>("FilterInvites");
 
@@ -818,6 +824,23 @@ namespace NadekoBot.Migrations
                         .IsUnique();
 
                     b.ToTable("SelfAssignableRoles");
+                });
+                
+            modelBuilder.Entity("NadekoBot.Services.Database.Models.SelfAssignedRank", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<ulong>("GuildId");
+
+                    b.Property<ulong>("RoleId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GuildId", "RoleId")
+                        .IsUnique();
+
+                    b.ToTable("SelfAssignableRanks");
                 });
 
             modelBuilder.Entity("NadekoBot.Services.Database.Models.UserPokeTypes", b =>

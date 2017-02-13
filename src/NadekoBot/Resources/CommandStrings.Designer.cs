@@ -231,7 +231,7 @@ namespace NadekoBot.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Toggles the automatic deletion of confirmations for {0}iam and {0}iamn commands..
+        ///    Toggles the automatic deletion of confirmations for {0}show and {0}hide commands..
         /// </summary>
         public static string adsarm_desc {
             get {
@@ -555,7 +555,7 @@ namespace NadekoBot.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Adds a role to the list of self-assignable roles..
+        ///    Adds a role to the list of self-assignable roles..
         /// </summary>
         public static string asar_desc {
             get {
@@ -3435,56 +3435,56 @@ namespace NadekoBot.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to iam.
+        ///    Looks up a localized string similar to show.
         /// </summary>
-        public static string iam_cmd {
+        public static string show_cmd {
             get {
-                return ResourceManager.GetString("iam_cmd", resourceCulture);
+                return ResourceManager.GetString("show_cmd", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Adds a role to you that you choose. Role must be on a list of self-assignable roles..
+        ///    Adds a role to you that you choose. Role must be on a list of self-assignable roles..
         /// </summary>
-        public static string iam_desc {
+        public static string show_desc {
             get {
-                return ResourceManager.GetString("iam_desc", resourceCulture);
+                return ResourceManager.GetString("show_desc", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to `{0}iam Gamer`.
+        ///    Looks up a localized string similar to `{0}show Gamer`.
         /// </summary>
-        public static string iam_usage {
+        public static string show_usage {
             get {
-                return ResourceManager.GetString("iam_usage", resourceCulture);
+                return ResourceManager.GetString("show_usage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to iamnot iamn.
+        ///    Looks up a localized string similar to hide.
         /// </summary>
-        public static string iamnot_cmd {
+        public static string hide_cmd {
             get {
-                return ResourceManager.GetString("iamnot_cmd", resourceCulture);
+                return ResourceManager.GetString("hide_cmd", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Removes a role to you that you choose. Role must be on a list of self-assignable roles..
+        ///    Removes a role to you that you choose. Role must be on a list of self-assignable roles..
         /// </summary>
-        public static string iamnot_desc {
+        public static string hide_desc {
             get {
-                return ResourceManager.GetString("iamnot_desc", resourceCulture);
+                return ResourceManager.GetString("hide_desc", resourceCulture);
             }
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to `{0}iamn Gamer`.
+        ///    Looks up a localized string similar to `{0}hide Gamer`.
         /// </summary>
-        public static string iamnot_usage {
+        public static string hide_usage {
             get {
-                return ResourceManager.GetString("iamnot_usage", resourceCulture);
+                return ResourceManager.GetString("hide_usage", resourceCulture);
             }
         }
         
@@ -4335,7 +4335,7 @@ namespace NadekoBot.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Lists all self-assignable roles..
+        ///    Lists all self-assignable roles..
         /// </summary>
         public static string lsar_desc {
             get {
@@ -6441,7 +6441,7 @@ namespace NadekoBot.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Removes a specified role from the list of self-assignable roles..
+        ///    Removes a specified role from the list of self-assignable roles..
         /// </summary>
         public static string rsar_desc {
             get {
@@ -7710,7 +7710,7 @@ namespace NadekoBot.Resources {
         }
         
         /// <summary>
-        ///    Looks up a localized string similar to Toggles whether the self-assigned roles are exclusive. (So that any person can have only one of the self assignable roles).
+        ///    Toggles whether the self-assigned roles are exclusive. (So that any person can have only one of the self assignable roles).
         /// </summary>
         public static string tesar_desc {
             get {
@@ -7751,60 +7751,6 @@ namespace NadekoBot.Resources {
         public static string tictactoe_usage {
             get {
                 return ResourceManager.GetString("tictactoe_usage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    Looks up a localized string similar to timezone.
-        /// </summary>
-        public static string timezone_cmd {
-            get {
-                return ResourceManager.GetString("timezone_cmd", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    Looks up a localized string similar to Sets this guilds timezone. This affects bot&apos;s time output in this server (logs, etc..).
-        /// </summary>
-        public static string timezone_desc {
-            get {
-                return ResourceManager.GetString("timezone_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    Looks up a localized string similar to `{0}timezone`.
-        /// </summary>
-        public static string timezone_usage {
-            get {
-                return ResourceManager.GetString("timezone_usage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    Looks up a localized string similar to timezones.
-        /// </summary>
-        public static string timezones_cmd {
-            get {
-                return ResourceManager.GetString("timezones_cmd", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    Looks up a localized string similar to List of all timezones available on the system to be used with `{0}timezone`..
-        /// </summary>
-        public static string timezones_desc {
-            get {
-                return ResourceManager.GetString("timezones_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    Looks up a localized string similar to `{0}timezones`.
-        /// </summary>
-        public static string timezones_usage {
-            get {
-                return ResourceManager.GetString("timezones_usage", resourceCulture);
             }
         }
         
@@ -9020,6 +8966,222 @@ namespace NadekoBot.Resources {
         public static string youtube_usage {
             get {
                 return ResourceManager.GetString("youtube_usage", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///    Looks up a localized string similar to test.
+        /// </summary>
+        public static string test_cmd {
+            get {
+                return ResourceManager.GetString("test_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Prints a simple string of embedded text.
+        /// </summary>
+        public static string test_desc {
+            get {
+                return ResourceManager.GetString("test_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}test`.
+        /// </summary>
+        public static string test_usage {
+            get {
+                return ResourceManager.GetString("test_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to rankautodelete.
+        /// </summary>
+        public static string rankautodelete_cmd {
+            get {
+                return ResourceManager.GetString("rankautodelete_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Toggles the automatic deletion of confirmations for {0}rankset and {0}rankclear commands..
+        /// </summary>
+        public static string rankautodelete_desc {
+            get {
+                return ResourceManager.GetString("rankautodelete_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}rankautodelete`.
+        /// </summary>
+        public static string rankautodelete_usage {
+            get {
+                return ResourceManager.GetString("rankautodelete_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to rankadd.
+        /// </summary>
+        public static string rankadd_cmd {
+            get {
+                return ResourceManager.GetString("rankadd_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Adds a rank to the list of self-assignable ranks..
+        /// </summary>
+        public static string rankadd_desc {
+            get {
+                return ResourceManager.GetString("rankadd_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}rankadd Gold`.
+        /// </summary>
+        public static string rankadd_usage {
+            get {
+                return ResourceManager.GetString("rankadd_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to rankremove.
+        /// </summary>
+        public static string rankremove_cmd {
+            get {
+                return ResourceManager.GetString("rankremove_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Removes a specified rank from the list of self-assignable ranks..
+        /// </summary>
+        public static string rankremove_desc {
+            get {
+                return ResourceManager.GetString("rankremove_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}rankremove`.
+        /// </summary>
+        public static string rankremove_usage {
+            get {
+                return ResourceManager.GetString("rankremove_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to ranklist.
+        /// </summary>
+        public static string ranklist_cmd {
+            get {
+                return ResourceManager.GetString("ranklist_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Lists all self-assignable ranks..
+        /// </summary>
+        public static string ranklist_desc {
+            get {
+                return ResourceManager.GetString("ranklist_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}ranklist`.
+        /// </summary>
+        public static string ranklist_usage {
+            get {
+                return ResourceManager.GetString("ranklist_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to rankexclusive.
+        /// </summary>
+        public static string rankexclusive_cmd {
+            get {
+                return ResourceManager.GetString("rankexclusive_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Toggles whether the self-assigned ranks are exclusive. (So that any person can have only one of the self assignable ranks).
+        /// </summary>
+        public static string rankexclusive_desc {
+            get {
+                return ResourceManager.GetString("rankexclusive_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}rankexclusive`.
+        /// </summary>
+        public static string rankexclusive_usage {
+            get {
+                return ResourceManager.GetString("rankexclusive_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to rankset.
+        /// </summary>
+        public static string rankset_cmd {
+            get {
+                return ResourceManager.GetString("rankset_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Adds a rank to you that you choose. Rank must be on a list of self-assignable ranks..
+        /// </summary>
+        public static string rankset_desc {
+            get {
+                return ResourceManager.GetString("rankset_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}rankset Gold`.
+        /// </summary>
+        public static string rankset_usage {
+            get {
+                return ResourceManager.GetString("rankset_usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to rankclear.
+        /// </summary>
+        public static string rankclear_cmd {
+            get {
+                return ResourceManager.GetString("rankclear_cmd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Removes a rank to you that you choose. Rank must be on a list of self-assignable ranks..
+        /// </summary>
+        public static string rankclear_desc {
+            get {
+                return ResourceManager.GetString("rankclear_desc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    Looks up a localized string similar to `{0}rankclear Gold`.
+        /// </summary>
+        public static string rankclear_usage {
+            get {
+                return ResourceManager.GetString("rankclear_usage", resourceCulture);
             }
         }
     }

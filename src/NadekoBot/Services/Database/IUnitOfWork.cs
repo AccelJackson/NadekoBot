@@ -14,6 +14,7 @@ namespace NadekoBot.Services.Database
         IClashOfClansRepository ClashOfClans { get; }
         IReminderRepository Reminders { get; }
         ISelfAssignedRolesRepository SelfAssignedRoles { get; }
+        ISelfAssignedRanksRepository SelfAssignedRanks { get; }
         IBotConfigRepository BotConfig { get; }
         IUnitConverterRepository ConverterUnits { get; }
         ICustomReactionRepository CustomReactions { get; }

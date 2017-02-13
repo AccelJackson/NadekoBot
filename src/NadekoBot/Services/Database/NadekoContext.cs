@@ -32,6 +32,7 @@ namespace NadekoBot.Services.Database
         public DbSet<ClashCaller> ClashCallers { get; set; }
         public DbSet<Reminder> Reminders { get; set; }
         public DbSet<SelfAssignedRole> SelfAssignableRoles { get; set; }
+        public DbSet<SelfAssignedRank> SelfAssignableRanks { get; set; }
         public DbSet<BotConfig> BotConfig { get; set; }
         public DbSet<Currency> Currency { get; set; }
         public DbSet<ConvertUnit> ConversionUnits { get; set; }
@@ -188,6 +189,16 @@ namespace NadekoBot.Services.Database
             var selfassignableRolesEntity = modelBuilder.Entity<SelfAssignedRole>();
 
             selfassignableRolesEntity
+                .HasIndex(s => new { s.GuildId, s.RoleId })
+                .IsUnique();
+
+            #endregion
+            
+            #region Self Assignable Ranks
+
+            var selfassignableRanksEntity = modelBuilder.Entity<SelfAssignedRank>();
+
+            selfassignableRanksEntity
                 .HasIndex(s => new { s.GuildId, s.RoleId })
                 .IsUnique();
 

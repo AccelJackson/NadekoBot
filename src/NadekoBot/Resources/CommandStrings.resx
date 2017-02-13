@@ -405,23 +405,23 @@
   <data name="tesar_usage" xml:space="preserve">
     <value>`{0}tesar`</value>
   </data>
-  <data name="iam_cmd" xml:space="preserve">
-    <value>iam</value>
+  <data name="show_cmd" xml:space="preserve">
+    <value>show</value>
   </data>
-  <data name="iam_desc" xml:space="preserve">
+  <data name="show_desc" xml:space="preserve">
     <value>Adds a role to you that you choose. Role must be on a list of self-assignable roles.</value>
   </data>
-  <data name="iam_usage" xml:space="preserve">
-    <value>`{0}iam Gamer`</value>
+  <data name="show_usage" xml:space="preserve">
+    <value>`{0}show Gamer`</value>
   </data>
-  <data name="iamnot_cmd" xml:space="preserve">
-    <value>iamnot iamn</value>
+  <data name="hide_cmd" xml:space="preserve">
+    <value>hide hide</value>
   </data>
-  <data name="iamnot_desc" xml:space="preserve">
+  <data name="hide_desc" xml:space="preserve">
     <value>Removes a role to you that you choose. Role must be on a list of self-assignable roles.</value>
   </data>
-  <data name="iamnot_usage" xml:space="preserve">
-    <value>`{0}iamn Gamer`</value>
+  <data name="hide_usage" xml:space="preserve">
+    <value>`{0}hide Gamer`</value>
   </data>
   <data name="addcustreact_cmd" xml:space="preserve">
     <value>addcustreact acr</value>
@@ -2479,7 +2479,7 @@
     <value>adsarm</value>
   </data>
   <data name="adsarm_desc" xml:space="preserve">
-    <value>Toggles the automatic deletion of confirmations for {0}iam and {0}iamn commands.</value>
+    <value>Toggles the automatic deletion of confirmations for {0}show and {0}hide commands.</value>
   </data>
   <data name="adsarm_usage" xml:space="preserve">
     <value>`{0}adsarm`</value>
@@ -3087,22 +3087,77 @@
   <data name="tictactoe_usage" xml:space="preserve">
     <value>&gt;ttt</value>
   </data>
-  <data name="timezones_cmd" xml:space="preserve">
-    <value>timezones</value>
+  <data name="test_cmd" xml:space="preserve">
+    <value>test</value>
   </data>
-  <data name="timezones_desc" xml:space="preserve">
-    <value>List of all timezones available on the system to be used with `{0}timezone`.</value>
+  <data name="test_desc" xml:space="preserve">
+    <value>Prints a simple string of embedded text.</value>
   </data>
-  <data name="timezones_usage" xml:space="preserve">
-    <value>`{0}timezones`</value>
+  <data name="test_usage" xml:space="preserve">
+    <value>`{0}test`</value>
   </data>
-  <data name="timezone_cmd" xml:space="preserve">
-    <value>timezone</value>
+  <data name="rankautodelete_cmd" xml:space="preserve">
+    <value>rankautodelete</value>
   </data>
-  <data name="timezone_desc" xml:space="preserve">
-    <value>Sets this guilds timezone. This affects bot's time output in this server (logs, etc..)</value>
+  <data name="rankautodelete_cmd_desc" xml:space="preserve">
+    <value>Toggles the automatic deletion of confirmations for {0}rankset and {0}rankclear commands.</value>
   </data>
-  <data name="timezone_usage" xml:space="preserve">
-    <value>`{0}timezone`</value>
+  <data name="rankautodelete_cmd_usage" xml:space="preserve">
+    <value>`{0}rankautodelete_cmd`</value>
   </data>
+  <data name="rankadd_cmd" xml:space="preserve">
+    <value>rankadd</value>
+  </data>
+  <data name="rankadd_desc" xml:space="preserve">
+    <value>Adds a rank to the list of self-assignable ranks.</value>
+  </data>
+  <data name="rankadd_usage" xml:space="preserve">
+    <value>`{0}rankadd Gold`</value>
+  </data>
+  <data name="rankremove_cmd" xml:space="preserve">
+    <value>rankremove</value>
+  </data>
+  <data name="rankremove" xml:space="preserve">
+    <value>Removes a specified rank from the list of self-assignable ranks.</value>
+  </data>
+  <data name="rankremove_usage" xml:space="preserve">
+    <value>`{0}rankremove`</value>
+  </data>
+  <data name="ranklist_cmd" xml:space="preserve">
+    <value>ranklist</value>
+  </data>
+  <data name="ranklist_desc" xml:space="preserve">
+    <value>Lists all self-assignable ranks.</value>
+  </data>
+  <data name="ranklist_usage" xml:space="preserve">
+    <value>`{0}ranklist`</value>
+  </data>
+  <data name="rankexclusive_cmd" xml:space="preserve">
+    <value>rankexclusive</value>
+  </data>
+  <data name="rankexclusive_desc" xml:space="preserve">
+    <value>Toggles whether the self-assigned ranks are exclusive. (So that any person can have only one of the self assignable ranks)</value>
+  </data>
+  <data name="rankexclusive_usage" xml:space="preserve">
+    <value>`{0}rankexclusive`</value>
+  </data>
+  <data name="rankset_cmd" xml:space="preserve">
+    <value>rankset</value>
+  </data>
+  <data name="rankset_desc" xml:space="preserve">
+    <value>Adds a rank to you that you choose. Rank must be on a list of self-assignable ranks.</value>
+  </data>
+  <data name="rankset_usage" xml:space="preserve">
+    <value>`{0}rankset Gold`</value>
+  </data>
+  <data name="rankclear_cmd" xml:space="preserve">
+    <value>rankclear</value>
+  </data>
+  <data name="rankclear_desc" xml:space="preserve">
+    <value>Removes a rank to you that you choose. Rank must be on a list of self-assignable ranks.</value>
+  </data>
+  <data name="rankclear_usage" xml:space="preserve">
+    <value>`{0}rankclear Gold`</value>
+  </data>
+ 
 </root>

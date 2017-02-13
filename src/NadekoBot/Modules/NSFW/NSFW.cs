@@ -19,7 +19,7 @@ namespace NadekoBot.Modules.NSFW
     [NadekoModule("NSFW", "~")]
     public class NSFW : DiscordModule
     {
-
+#if !GLOBAL_NADEKO
         private static ConcurrentDictionary<ulong, Timer> AutoHentaiTimers { get; } = new ConcurrentDictionary<ulong, Timer>();
         private static ConcurrentHashSet<ulong> _hentaiBombBlacklist { get; } = new ConcurrentHashSet<ulong>();
 
@@ -65,7 +65,7 @@ namespace NadekoBot.Modules.NSFW
         [NadekoCommand, Usage, Description, Aliases]
         public Task Hentai([Remainder] string tag = null) =>
             InternalHentai(Context.Channel, tag, false);
-#if !GLOBAL_NADEKO
+
         [NadekoCommand, Usage, Description, Aliases]
         [RequireUserPermission(ChannelPermission.ManageMessages)]
         public async Task AutoHentai(int interval = 0, string tags = null)
@@ -134,13 +134,12 @@ namespace NadekoBot.Modules.NSFW
 
                 await Context.Channel.SendMessageAsync(String.Join("\n\n", linksEnum)).ConfigureAwait(false);
             }
-            finally
-            {
+            finally {
                 await Task.Delay(5000).ConfigureAwait(false);
                 _hentaiBombBlacklist.TryRemove(Context.User.Id);
             }
         }
-#endif
+
         [NadekoCommand, Usage, Description, Aliases]
         public Task Yandere([Remainder] string tag = null)
             => Searches.Searches.InternalDapiCommand(Context.Message, tag, Searches.Searches.DapiSearchType.Yandere);
@@ -148,7 +147,7 @@ namespace NadekoBot.Modules.NSFW
         [NadekoCommand, Usage, Description, Aliases]
         public Task Konachan([Remainder] string tag = null)
             => Searches.Searches.InternalDapiCommand(Context.Message, tag, Searches.Searches.DapiSearchType.Konachan);
-
+#endif
         [NadekoCommand, Usage, Description, Aliases]
         public async Task E621([Remainder] string tag = null)
         {
@@ -280,6 +279,7 @@ namespace NadekoBot.Modules.NSFW
         public static Task<string> GetRule34ImageLink(string tag) =>
             Searches.Searches.InternalDapiSearch(tag, Searches.Searches.DapiSearchType.Rule34);
 
+#if !GLOBAL_NADEKO
         public static Task<string> GetYandereImageLink(string tag) =>
             Searches.Searches.InternalDapiSearch(tag, Searches.Searches.DapiSearchType.Yandere);
 
@@ -288,5 +288,6 @@ namespace NadekoBot.Modules.NSFW
 
         public static Task<string> GetGelbooruImageLink(string tag) =>
             Searches.Searches.InternalDapiSearch(tag, Searches.Searches.DapiSearchType.Gelbooru);
+#endif
     }
 }

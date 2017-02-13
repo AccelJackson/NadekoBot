@@ -387,6 +387,8 @@ namespace NadekoBot.Migrations
 
                     b.Property<bool>("AutoDeleteSelfAssignedRoleMessages");
 
+                    b.Property<bool>("AutoDeleteSelfAssignedRankMessages");
+
                     b.Property<ulong>("ByeMessageChannelId");
 
                     b.Property<string>("ChannelByeMessageText");
