@@ -32,7 +32,7 @@ namespace NadekoBot.Modules.Watchpoint
                     await uow.CompleteAsync().ConfigureAwait(false);
                 }
 
-                await Context.Channel.SendConfirmAsync($"ℹ️ Automatic deleting of `rankset` and `rankclear` confirmations has been {(newval ? "**enabled**" : "**disabled**")}.")
+                await Context.Channel.SendConfirmAsync($"ℹ️ Automatic deleting of `rank` and `clear` confirmations has been {(newval ? "**enabled**" : "**disabled**")}.")
                              .ConfigureAwait(false);
             }
 
@@ -174,7 +174,7 @@ namespace NadekoBot.Modules.Watchpoint
                     var sameRole = Context.Guild.GetRole(sameRoleId);
                     if (sameRoleId != default(ulong))
                     {
-                        await Context.Channel.SendErrorAsync($"❎ You already have **{sameRole?.Name}** rank.\n\nClear it with **.rankclear {sameRole?.Name}** before continuing.").ConfigureAwait(false);
+                        await Context.Channel.SendErrorAsync($"❎ You already have **{sameRole?.Name}** rank.\n\nClear it with **.clear {sameRole?.Name}** before continuing.").ConfigureAwait(false);
                         return;
                     }
                 }

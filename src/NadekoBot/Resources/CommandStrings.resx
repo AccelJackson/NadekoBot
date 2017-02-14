@@ -406,7 +406,7 @@
     <value>`{0}tesar`</value>
   </data>
   <data name="show_cmd" xml:space="preserve">
-    <value>show</value>
+    <value>show yes</value>
   </data>
   <data name="show_desc" xml:space="preserve">
     <value>Adds a role to you that you choose. Role must be on a list of self-assignable roles.</value>
@@ -415,7 +415,7 @@
     <value>`{0}show Gamer`</value>
   </data>
   <data name="hide_cmd" xml:space="preserve">
-    <value>hide hide</value>
+    <value>hide no</value>
   </data>
   <data name="hide_desc" xml:space="preserve">
     <value>Removes a role to you that you choose. Role must be on a list of self-assignable roles.</value>
@@ -3142,7 +3142,7 @@
     <value>`{0}rankexclusive`</value>
   </data>
   <data name="rankset_cmd" xml:space="preserve">
-    <value>rankset</value>
+    <value>rank</value>
   </data>
   <data name="rankset_desc" xml:space="preserve">
     <value>Adds a rank to you that you choose. Rank must be on a list of self-assignable ranks.</value>
@@ -3151,7 +3151,7 @@
     <value>`{0}rankset Gold`</value>
   </data>
   <data name="rankclear_cmd" xml:space="preserve">
-    <value>rankclear</value>
+    <value>clear</value>
   </data>
   <data name="rankclear_desc" xml:space="preserve">
     <value>Removes a rank to you that you choose. Rank must be on a list of self-assignable ranks.</value>
